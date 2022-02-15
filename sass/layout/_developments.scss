@@ -4,13 +4,11 @@
 .developments-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(-1 * var(--item-space-gap));
-  margin-left: calc(-1 * var(--item-space-gap));
+  margin: -15px;
 }
 .developments-item {
   flex-basis: calc(100% / 3 - var(--item-space-gap));
-  margin-left: var(--item-space-gap);
-  margin-bottom: var(--item-space-gap);
+  margin: 15px;
 }
 .developments-title {
   margin-bottom: 50px;

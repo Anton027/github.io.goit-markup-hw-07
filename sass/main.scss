@@ -1,9 +1,18 @@
-@import './utilite/vars';
-
+@import './utile/vars';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/benefits';
 @import './layout/developments';
 @import './layout/our-team';
-@import './utilite/modal';
+@import './utile/modal';
 @import './layout/clients';
+@import './layout/filter';
+@import './layout/portfolio';
+@import './utile/color';
+@import './components/btn';
+@import './layout/footer';
+@import './base/reset';
+@import './base/common';
+@import './components/section';
+@import './components/container';
+@import './base/hidden';

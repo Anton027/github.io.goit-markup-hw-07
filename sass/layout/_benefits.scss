@@ -1,11 +1,11 @@
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--item-space-gap));
+  margin: -15px;
 }
 .benefits-item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
-  margin-left: var(--item-space-gap);
+  margin: 15px;
 }
 .benefits-icon-wrapper {
   display: flex;
