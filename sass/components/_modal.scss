@@ -10,14 +10,19 @@
   transition: opacity var(--transition-time) var(--function-time),
     visibility var(--transition-time) var(--function-time);
 }
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) rotate(60deg) scale(1.2);
+
+.backdrop.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) rotate(60deg) scale(1.2);
+  }
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -50,12 +55,13 @@
   border-radius: 50%;
   cursor: pointer;
   transition: color var(--transition-time) var(--function-time);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-btn-color);
+  }
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  color: var(--hover-btn-color);
-}
 .modal-icon {
   fill: currentColor;
 }
@@ -76,6 +82,7 @@
 
   color: var(--title-text-color);
 }
+
 .modal-form-item {
   position: relative;
 
@@ -83,13 +90,16 @@
   flex-direction: column;
   justify-content: center;
   color: var(--title-text-color);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
 }
-.modal-form-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-.modal-form-input.padding-left {
-  padding-left: 42px;
-}
+
 .modal-form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -99,17 +109,17 @@
   transition: color var(--transition-time) var(--function-time),
     border-color var(--transition-time) var(--function-time);
   outline: none;
+
+  &.padding-left {
+    padding-left: 42px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 }
-.modal-form-input:focus ~ .modal-form-icon,
-.modal-form-input:hover ~ .modal-form-icon {
-  color: var(--accent-color);
-}
-.modal-form-input:focus,
-.modal-form-input:hover,
-.modal-form-textarea:focus,
-.modal-form-textarea:hover {
-  border-color: var(--accent-color);
-}
+
 .modal-form-icon {
   fill: currentColor;
 
@@ -117,9 +127,11 @@
   top: 50%;
   left: 12px;
   transition: color var(--transition-time) var(--function-time);
-}
-.modal-form-item:nth-child(4) {
-  margin-bottom: 20px;
+
+  .modal-form-input:focus ~ &,
+  .modal-form-input:hover ~ & {
+    color: var(--accent-color);
+  }
 }
 
 .modal-form-label {
@@ -142,17 +154,22 @@
   transition: border-color var(--transition-time) var(--function-time);
 
   outline: none;
-}
 
-.modal-form-textarea::placeholder {
-  font-family: Roboto;
-  font-style: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-family: Roboto;
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-checkbox-label {
@@ -194,19 +211,21 @@
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   transition: border-color var(--transition-time) var(--function-time);
+
+  .modal-checkbox-input:checked + & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url(../images/svg/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .modal-checkbox-input:focus + &,
+  .modal-checkbox-input:hover + & {
+    border-color: var(--accent-color);
+  }
 }
 
-.modal-checkbox-input:checked + .checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url(../images/svg/check.svg);
-  background-size: contain;
-  background-origin: border-box;
-}
-.modal-checkbox-input:focus + .checkbox-icon,
-.modal-checkbox-input:hover + .checkbox-icon {
-  border-color: var(--accent-color);
-}
 .modal-form-btn {
   padding: 10px 55px;
   font-weight: 700;
@@ -223,9 +242,10 @@
 
   transition: background-color var(--transition-time) var(--function-time),
     box-shadow var(--transition-time) var(--function-time);
-}
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background-color: var(--hover-btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

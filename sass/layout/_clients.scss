@@ -23,12 +23,14 @@
 
   transition: border-color var(--transition-time) var(--function-time),
     color var(--transition-time) var(--function-time);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
+
 .clients-icon {
   fill: currentColor;
 }
