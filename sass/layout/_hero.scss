@@ -19,13 +19,13 @@
   margin-top: 0;
   background-color: var(--primary-bg-color);
 
-  &-main {
+  &__main {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &-title {
+  &__title {
     margin-bottom: var(--item-space-gap);
 
     color: var(--main-light-color);
@@ -38,7 +38,7 @@
   }
 }
 
-.hero-btn {
+.hero__btn {
   min-width: 200px;
   padding: 10px 32px;
 

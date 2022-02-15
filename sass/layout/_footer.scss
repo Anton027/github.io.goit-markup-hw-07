@@ -10,15 +10,7 @@
     justify-content: space-between;
   }
 
-  &-logo {
-    display: inline-block;
-    font-style: inherit;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-
+  &__logo {
     margin-bottom: 20px;
 
     color: var(--main-light-color);
@@ -63,6 +55,7 @@
 
 .join-list {
   display: flex;
+  flex-wrap: wrap;
 
   & .join-item + .join-item {
     margin-left: 10px;
