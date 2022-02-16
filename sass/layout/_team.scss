@@ -1,14 +1,14 @@
-.our-team {
+.team {
   background: var(--first-btn-color);
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.team-item {
+.team__item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
   margin: 15px;
 
@@ -20,15 +20,15 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
 
-.team-content {
+.team__content {
   padding: var(--item-space-gap) 32px;
 }
 
-.team-name {
+.team__name {
   line-height: 1.18;
   font-size: 16px;
 
@@ -37,43 +37,17 @@
   font-weight: 500;
 }
 
-.team-positions {
+.team__positions {
   line-height: 1.18;
   font-size: 16px;
 
   margin-bottom: 16px;
 }
-
-.team-icon-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-
-  & .team-icon-item + .team-icon-item {
-    margin-left: 10px;
-  }
-}
-
-.team-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-width: 44px;
-  min-height: 44px;
-  border-radius: 50%;
+.team__link {
   color: var(--first-icon-color);
-
-  transition: background-color var(--transition-time) var(--function-time),
-    color var(--transition-time) var(--function-time);
-
   &:hover,
   &:focus {
     background-color: var(--accent-color);
     color: var(--main-light-color);
   }
-}
-
-.team-icon {
-  fill: currentColor;
 }

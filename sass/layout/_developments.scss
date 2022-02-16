@@ -2,22 +2,22 @@
   padding-bottom: 94px;
 }
 
-.developments-list {
+.developments__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.developments-item {
+.developments__item {
   flex-basis: calc(100% / 3 - var(--item-space-gap));
   margin: 15px;
 }
 
-.developments-title {
+.developments__title {
   margin-bottom: 50px;
 }
 
-.development-thumb {
+.development__thumb {
   position: relative;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
   }
 }
 
-.development-subtitle {
+.development__subtitle {
   position: absolute;
   bottom: 27px;
 

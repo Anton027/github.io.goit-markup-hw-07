@@ -1,13 +1,13 @@
-.benefits-list {
+.benefits__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
-.benefits-item {
+.benefits__item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
   margin: 15px;
 }
-.benefits-icon-wrapper {
+.benefits__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
   background: var(--first-btn-color);
   border-radius: 4px;
 }
-.benefits-subtitle {
+.benefits__subtitle {
   margin-bottom: 10px;
 
   font-size: inherit;

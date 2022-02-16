@@ -4,7 +4,7 @@
 
   background-color: var(--primary-bg-color);
 
-  &-main {
+  &__main {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -15,16 +15,12 @@
 
     color: var(--main-light-color);
   }
+}
 
-  &-address {
-    display: flex;
-    text-decoration: none;
-    font-style: inherit;
-  }
-
-  &-join {
-    min-width: 206px;
-  }
+.address {
+  display: flex;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .address-link.map {
@@ -45,7 +41,11 @@
   margin-bottom: 9px;
 }
 
-.join-text {
+.join {
+  min-width: 206px;
+}
+
+.join__text {
   margin-bottom: 20px;
   color: var(--main-light-color);
   text-transform: uppercase;
@@ -56,24 +56,16 @@
 .join-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 
   & .join-item + .join-item {
     margin-left: 10px;
   }
 }
 
-.join-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-width: 44px;
-  min-height: 44px;
-  border-radius: 50%;
+.join__link {
   background: var(--background-icon-color);
   color: var(--main-light-color);
-
-  transition: background-color var(--transition-time) var(--function-time);
 
   &:hover,
   &:focus {
@@ -81,16 +73,16 @@
   }
 }
 
-.join-icon {
+.join__icon {
   fill: currentColor;
 }
 
-.footer-subscribe {
+.subscribe {
   display: flex;
   flex-direction: column;
 }
 
-.footer-subscribe-text {
+.subscribe__text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -100,16 +92,16 @@
   color: var(--main-light-color);
 }
 
-.footer-subscribe-list {
+.subscribe__list {
   display: flex;
   flex-wrap: wrap;
 
-  & .footer-subscribe-item + .footer-subscribe-item {
+  & .subscribe__item + .subscribe__item {
     margin-left: 12px;
   }
 }
 
-.footer-subscribe-input {
+.subscribe__input {
   padding: 15px;
   min-width: 358px;
   min-height: 50px;
@@ -135,7 +127,7 @@
   }
 }
 
-.footer-subscribe-btn {
+.subscribe__btn {
   display: flex;
   align-items: center;
 
@@ -165,7 +157,7 @@
   }
 }
 
-.footer-subscribe-icon {
+.subscribe__icon {
   margin-left: 10px;
 
   fill: currentColor;
