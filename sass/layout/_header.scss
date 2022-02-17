@@ -35,8 +35,9 @@
 
   content: '';
 
-  min-width: 100%;
-  min-height: 4px;
+  @include size(100%, 4px);
+  // min-width: 100%;
+  // min-height: 4px;
 
   background-color: var(--accent-color);
   border-radius: 2px;

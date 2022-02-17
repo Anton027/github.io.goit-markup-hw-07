@@ -1,8 +1,8 @@
 .filter {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %display-wrap;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 50px;
 
   & .filter__item + .filter__item {

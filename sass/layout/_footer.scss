@@ -19,6 +19,7 @@
 
 .address {
   display: flex;
+
   text-decoration: none;
   font-style: normal;
 }
@@ -29,6 +30,7 @@
 
 .address-link {
   display: flex;
+
   text-decoration: none;
   font-style: inherit;
 
@@ -42,11 +44,13 @@
 }
 
 .join {
-  min-width: 206px;
+  @include size(206px, null);
+  // min-width: 206px;
 }
 
 .join__text {
   margin-bottom: 20px;
+
   color: var(--main-light-color);
   text-transform: uppercase;
   line-height: 1.14;
@@ -54,8 +58,8 @@
 }
 
 .join-list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %display-wrap;
+
   list-style: none;
 
   & .join-item + .join-item {
@@ -93,8 +97,7 @@
 }
 
 .subscribe__list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %display-wrap;
 
   & .subscribe__item + .subscribe__item {
     margin-left: 12px;
@@ -103,8 +106,10 @@
 
 .subscribe__input {
   padding: 15px;
-  min-width: 358px;
-  min-height: 50px;
+
+  @include size(356px, 50px);
+  // min-width: 358px;
+  // min-height: 50px;
 
   color: var(--main-light-color);
   background-color: var(--primary-bg-color);

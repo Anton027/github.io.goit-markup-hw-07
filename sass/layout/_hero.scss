@@ -15,6 +15,7 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
   text-align: center;
   margin-top: 0;
   background-color: var(--primary-bg-color);
@@ -39,7 +40,8 @@
 }
 
 .hero__btn {
-  min-width: 200px;
+  @include size(200px, null);
+  // min-width: 200px;
   padding: 10px 32px;
 
   font-weight: 700;

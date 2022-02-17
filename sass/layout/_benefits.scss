@@ -1,6 +1,5 @@
 .benefits__list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %display-wrap;
   margin: -15px;
 }
 .benefits__item {
@@ -13,8 +12,8 @@
   align-items: center;
   margin-bottom: var(--item-space-gap);
 
-  min-width: 270px;
-  min-height: 120px;
+  @include size(270px, 120px);
+
   background: var(--first-btn-color);
   border-radius: 4px;
 }
