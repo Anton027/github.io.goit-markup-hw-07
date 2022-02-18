@@ -32,8 +32,9 @@
   transition: var(--transition-time) var(--function-time);
 
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+
+  @include size(528px, 581px);
+
   background: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -77,6 +78,7 @@
 
 .form-order__list {
   min-width: 448px;
+
   margin-bottom: 30px;
 }
 

@@ -7,7 +7,6 @@
   &__main {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
   }
 
   &__logo {
@@ -46,6 +45,7 @@
 .join {
   @include size(206px, null);
   // min-width: 206px;
+  margin-left: 70px;
 }
 
 .join__text {
@@ -84,6 +84,8 @@
 .subscribe {
   display: flex;
   flex-direction: column;
+
+  margin-left: 93px;
 }
 
 .subscribe__text {
